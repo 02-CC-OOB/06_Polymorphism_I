@@ -4,14 +4,20 @@ public class App {
     
     public static void main(String[] args) {
 
-        Worker worker = new Worker();
-        Queen queen = new Queen();
-        Drone drone = new Drone();
+        HoneyBee worker = new Worker();
+        HoneyBee queen = new Queen();
+        HoneyBee drone = new Drone();
 
         
         output(worker.doYourJob());
         output(drone.doYourJob());
         output(queen.doYourJob());
+
+        HoneyBee bee = new HoneyBee();
+        output(bee.doYourJob());
+        
+
+
 
         output("------------------");
 
